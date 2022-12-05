@@ -60,8 +60,11 @@ For building U-Boot on Alpine Linux at least the following packages are needed:
 
 .. code-block:: bash
 
-    apk add alpine-sdk bc bison dtc flex linux-headers ncurses-dev \
+    apk add alpine-sdk bc bison dtc flex swig linux-headers ncurses-dev \
       openssl-dev perl python3 py3-setuptools python3-dev sdl2-dev
+
+The cross compiler packages are named gcc-<target>, for example
+gcc-arm-none-eabi for 32 bit ARM targets.
 
 Prerequisites
 -------------
